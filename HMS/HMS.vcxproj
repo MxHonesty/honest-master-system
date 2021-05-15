@@ -148,11 +148,13 @@
   <ItemGroup>
     <ClCompile Include="emulator\Emulator.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="memory\ArrayMemory.cpp" />
     <ClCompile Include="Rom.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\types.h" />
     <ClInclude Include="emulator\Emulator.h" />
+    <ClInclude Include="memory\ArrayMemory.h" />
     <ClInclude Include="memory\Memory.h" />
     <ClInclude Include="Rom.h" />
   </ItemGroup>

@@ -1,4 +1,9 @@
 #include "Rom.h"
+#include "base/types.h"
+
+void Rom::load_from_file() {
+
+}
 
 bool Rom::is_code_masters() const {
 	WORD checksum = rom_memory->read(0x7ffb) << 8;

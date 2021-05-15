@@ -9,6 +9,7 @@ class Rom {
 
 private:
 	string filename;
+	Memory* header;
 	Memory* rom_memory;
 	
 public:
