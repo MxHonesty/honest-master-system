@@ -27,6 +27,9 @@
     <ClCompile Include="memory\ArrayMemory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="exceptions\MemoryException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\types.h">
@@ -42,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="memory\ArrayMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions\MemoryException.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

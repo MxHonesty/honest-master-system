@@ -22,4 +22,3 @@ public:
 	/** Writes the given BYTE at the given memory location */
 	void write(const BYTE data, const int position) override;
 };
-

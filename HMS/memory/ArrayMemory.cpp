@@ -1,13 +1,17 @@
 #include "ArrayMemory.h"
+#include "../exceptions/MemoryException.h"
+
 
 BYTE ArrayMemory::read(const int position) const {
-    // TODO: add range checking.
+    if (position < 0 || position >= dim)
+        throw MemoryException{ "Read out of range" };
 
     return physical.get()[position];
 }
 
 void ArrayMemory::write(const BYTE data, const int position) {
-    // TODO: add range checking.
+    if (position < 0 || position >= dim)
+        throw MemoryException{ "Write out of range" };
 
     physical.get()[position] = data;
 }

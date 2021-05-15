@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="emulator\Emulator.cpp" />
+    <ClCompile Include="exceptions\MemoryException.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memory\ArrayMemory.cpp" />
     <ClCompile Include="Rom.cpp" />
@@ -154,6 +155,7 @@
   <ItemGroup>
     <ClInclude Include="base\types.h" />
     <ClInclude Include="emulator\Emulator.h" />
+    <ClInclude Include="exceptions\MemoryException.h" />
     <ClInclude Include="memory\ArrayMemory.h" />
     <ClInclude Include="memory\Memory.h" />
     <ClInclude Include="Rom.h" />
