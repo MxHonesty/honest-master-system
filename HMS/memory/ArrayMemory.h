@@ -3,7 +3,7 @@
 #include "../base/types.h"
 #include <memory>
 
-
+// Memory implementation that stores the data inside an array.
 class ArrayMemory : public Memory {
 private:
 	std::unique_ptr<BYTE[]> physical;
@@ -18,6 +18,9 @@ public:
 
 	/** Reads the BYTE on the given position in memory. */
 	BYTE read(const int position) const override;
+
+	/** Reads the WORD at the given position in memory. */
+	WORD read_word(const int position) const override;
 
 	/** Writes the given BYTE at the given memory location */
 	void write(const BYTE data, const int position) override;
